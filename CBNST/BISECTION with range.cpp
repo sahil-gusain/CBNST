@@ -13,10 +13,10 @@ int main()
 	printf("enter the range ");
 	scanf("%d %d",&m,&n);
 	for(int i=m;i+1<n;i++){
-		if((fun(float(i))*fun(float(i+1)))<0)
+		if((fun((float)i)*fun((float)(i+1)))<0)
 		{
-			a=float(i);
-			b=float(i+1);
+			a=(float)i;
+			b=(float)i+1;
 			break;
 		}
 	}
